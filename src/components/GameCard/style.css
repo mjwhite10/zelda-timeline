@@ -1,0 +1,26 @@
+.gameCard {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(171, 171, 171);
+    height: 100%;
+    /* Height al 100 para que todas las tarjetas ocupen lo mismo
+    independientemente del tamaño del texto */
+    position: relative;
+    background-color:gainsboro;
+ 
+}
+
+.gameCard>*:not(:last-child) {
+    margin-bottom: 1rem;
+    /* No le queremos dar margin botom al texto */
+}
+
+.gameCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+
+/* Como el padre  */

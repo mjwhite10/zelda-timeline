@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { Timeline } from './components/Timeline';
+import zeldaGames from './data/zelda.json';
+//Importamos el json, ya viene parseado
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1 className="goldText">Zelda Timeline</h1>
       </header>
+      <main>
+        <Timeline items={zeldaGames} />
+      </main>
+      <footer>
+        <p>mjwhite@2022</p>
+      </footer>
     </div>
   );
 }
+
+//zeldaGames[X] entre llaves, para evaluar JS
+//como los juegos no tienen id ponemos como key del index de la function map.
+//No usar a menos que no haya otro
 
 export default App;
